@@ -1,0 +1,45 @@
+/* styles/Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* 确保背景是透明的 */
+    padding: 10px 20px;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 减少左侧图片和文字之间的间距 */
+  }
+  
+  .logoImage {
+    width: 200px;
+    height: 60px;
+    margin-right: 5px; /* 缩小图片和文字之间的间距 */
+  }
+  
+  .logo {
+    font-size: 1.2em; /* 缩小字体大小，使其与 Logo 图片更加契合 */
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 200px; /* 调整位置，使得文字更接近图片 */
+  }
+  
+  .rightSection {
+    display: flex;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navItem a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  

@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
+  // 其他的有效配置
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
