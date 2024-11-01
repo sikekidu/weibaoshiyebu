@@ -1,13 +1,22 @@
-/* styles/WhyUs.module.css */
 .whyUsSection {
+    position: relative; /* 设置父容器为相对定位，确保子元素可以相对移动 */
     padding: 40px;
     background: #333;
     color: #ffffff;
     height: 1000px;
     margin-bottom: 0px;
-  }
-  
-  .learnMoreButton {
+    background-image: url('../public/646168499733919244.jpg'); /* 添加背景图片 */
+    background-size: cover; /* 确保背景图片覆盖整个区域 */
+    background-position: center; /* 背景图片居中显示 */
+}
+
+.leftSection {
+    position: absolute; /* 使内容在父容器内进行绝对定位 */
+    bottom: 100px; /* 距离底部 20px */
+    left: 40px; /* 距离左侧 20px */
+}
+
+.learnMoreButton {
     padding: 10px 20px;
     border: 2px solid #ffffff;
     border-radius: 25px;
@@ -16,9 +25,9 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-  }
-  
-  .learnMoreButton:hover {
+}
+
+.learnMoreButton:hover {
     background: #ffffff;
     color: #333;
-  }
+}
