@@ -3,5 +3,22 @@
     padding: 40px;
     background: #444;
     color: #ffffff;
-    margin-bottom: 20px;
+    height: 1000px;
+    margin-bottom: 0px;
+  }
+  
+  .learnMoreButton {
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .learnMoreButton:hover {
+    background: #ffffff;
+    color: #444;
   }

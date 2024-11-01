@@ -2,8 +2,9 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* 使内容靠顶部对齐 */
     background: transparent; /* 确保背景是透明的 */
+    height: 1000px; /* 增加板块的高度，适应需求 */
     padding: 10px 20px;
   }
   
@@ -23,17 +24,19 @@
     font-size: 1.2em; /* 缩小字体大小，使其与 Logo 图片更加契合 */
     font-weight: bold;
     color: #ffffff;
-    margin-top: 200px; /* 调整位置，使得文字更接近图片 */
+    margin: 20px 0 0 0; /* 使得文字更接近图片并减少高度冲突 */
   }
   
   .rightSection {
     display: flex;
+    align-items: flex-start; /* 使导航与顶部对齐 */
   }
   
   .navList {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin-top: 20px; /* 确保与左侧元素对齐 */
   }
   
   .navItem a {
@@ -41,5 +44,3 @@
     color: #ffffff;
     font-weight: bold;
   }
-  
-  
