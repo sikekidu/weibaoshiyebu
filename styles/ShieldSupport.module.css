@@ -1,25 +1,44 @@
-/* styles/ShieldSupport.module.css */
-.supportSection {
-    padding: 40px;
-    background: #555;
-    color: #ffffff;
-    height: 1000px;
-    margin-bottom: 0px;
-  }
-  
-  .learnMoreButton {
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    background: transparent;
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .learnMoreButton:hover {
-    background: #ffffff;
-    color: #555;
-  }
-  
+.shieldSupportSection {
+  position: relative; /* 设置父容器为相对定位，确保子元素可以相对移动 */
+  padding: 0px; /* 移除填充以减少间隙 */
+  background: #444;
+  color: #ffffff;
+  min-height: 1000px; /* 保持自适应高度，避免内容过多占用空间 */
+  margin-bottom: 0px; /* 去除与其他组件的间隙 */
+  background-image: url('../public/603993911050408033.jpg'); /* 添加背景图片 */
+  background-size: cover; /* 确保背景图片覆盖整个区域 */
+  background-position: top; /* 将背景图片对齐到顶部 */
+  background-attachment: fixed; /* 使背景图片保持固定 */
+}
+
+.leftSection {
+  position: absolute; /* 保持内容相对于父容器布局 */
+  margin-top: 600px; /* 使内容相对于 ShieldSupport 的位置下移 */
+  left: 60px; /* 调整与容器左侧的距离 */
+}
+
+.hoverEffect {
+margin-bottom: 10px;
+transition: color 0.3s;
+}
+
+.hoverEffect:hover {
+color: #3b67e2;
+}
+
+.learnMoreButton {
+  padding: 10px 20px;
+  border: 2px solid #000; /* 默认状态下为黑色边框 */
+  border-radius: 25px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  margin-bottom: 20px; /* 调整按钮与下方内容之间的间距 */
+}
+
+.learnMoreButton:hover {
+  color: #3b67e2; /* 鼠标悬停时文字变为绿色 */
+  border-color: #3b67e2; /* 鼠标悬停时边框改为绿色 */
+}

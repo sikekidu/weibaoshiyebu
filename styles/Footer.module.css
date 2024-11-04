@@ -1,8 +1,43 @@
-/* styles/Footer.module.css */
 .footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #ffffff;
-    font-size: 0.9em;
-  }
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.returnToTop {
+  padding: 10px 20px;
+  border: 2px solid #000; /* 默认状态下为黑色边框 */
+  border-radius: 25px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  margin-bottom: 20px; /* 调整按钮与下方内容之间的间距 */
+}
+
+.returnToTop:hover {
+  color: #00ff00; /* 鼠标悬停时文字变为绿色 */
+  border-color: #00ff00; /* 鼠标悬停时边框改为绿色 */
+}
+
+.gradientLine {
+  height: 2px; /* 设置线条高度 */
+  width: 100%; /* 设置线条宽度 */
+  background: linear-gradient(to right, #00ff00, #ff0000); /* 设置渐变从绿色到红色 */
+  margin: 20px 0; /* 为线条增加上下边距 */
+}
+
+.footerLinks {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footerLinks p {
+  margin: 0;
+  letter-spacing: 2px; /* 增加字母间距 */
+}
+

@@ -1,24 +1,45 @@
-/* styles/SlurrySystem.module.css */
 .slurrySection {
-    padding: 40px;
-    background: #444;
-    color: #ffffff;
-    height: 1000px;
-    margin-bottom: 0px;
-  }
-  
-  .learnMoreButton {
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    background: transparent;
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .learnMoreButton:hover {
-    background: #ffffff;
-    color: #444;
-  }
+  position: relative;
+  padding: 0px;
+  background: #333;
+  color: #ffffff;
+  min-height: 1000px; /* 减少高度以避免内容过多占用空间 */ /* 使用自适应的最小高度，而不是固定的高度 */
+  margin: 0px;
+  background-image: url('../public/124653643590118532.jpg'); /* 添加背景图片 */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 使背景图片保持固定 */
+}
+
+.leftSection {
+  position: absolute; /* 保持内容在父容器内进行相对定位，避免布局问题 */
+  margin-top: 600px; /* 将间距调整为正数以使内容向下移动 */ /* 调整间距以减少与上一个板块的距离 */ /* 使用 margin 来控制间距，避免布局错乱 */
+  left: 60px;
+}
+
+.hoverEffect {
+margin-bottom: 10px;
+transition: color 0.3s;
+}
+
+.hoverEffect:hover {
+color: #3b67e2;
+}
+
+
+.learnMoreButton {
+  padding: 10px 20px;
+  border: 2px solid #000; /* 默认状态下为黑色边框 */
+  border-radius: 25px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  margin-bottom: 20px; /* 调整按钮与下方内容之间的间距 */
+}
+
+.learnMoreButton:hover {
+  color: #3b67e2; /* 鼠标悬停时文字变为绿色 */
+  border-color: #3b67e2; /* 鼠标悬停时边框改为绿色 */
+}

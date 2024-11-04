@@ -23,10 +23,10 @@ const Header = () => (
         </a>
       </Link>
       <Link href="/">
-        <h1 className={styles.logo} style={{ marginTop: '45px', marginLeft: '-145px', cursor: 'pointer' }}>设备维保事业部</h1>
+        <h1 className={styles.logo} style={{ marginTop: '45px', marginLeft: '0px', cursor: 'pointer' }}>设备维保事业部</h1>
       </Link>
     </div>
-    <nav className={styles.rightSection} style={{ marginTop: '45px' }}>
+    <nav className={styles.rightSection} style={{ marginTop: '50px' }}>
       <ul className={styles.navList} style={{ alignItems: 'flex-end' }}>
         <li className={styles.navItem}>
           <Link href="#slurry-system" className={styles.navLink}>泥水系统</Link>

@@ -1,33 +1,46 @@
 .whyUsSection {
-    position: relative; /* 设置父容器为相对定位，确保子元素可以相对移动 */
-    padding: 40px;
+    position: relative; /* 保持父容器相对定位，确保子元素相对于父容器移动 */
+    padding: 0px;
     background: #333;
+    margin-top: -120px;
     color: #ffffff;
-    height: 1000px;
-    margin-bottom: 0px;
-    background-image: url('../public/646168499733919244.jpg'); /* 添加背景图片 */
+    min-height: 1000px; /* 使用最小高度，自适应内容，避免内容裁剪 */
+    margin-bottom: 0px; /* 为下一个组件提供足够的间距 */
+    background-image: url('../public/747374890227005468.jpg'); /* 添加背景图片 */
     background-size: cover; /* 确保背景图片覆盖整个区域 */
     background-position: center; /* 背景图片居中显示 */
+    background-attachment: fixed; /* 使背景图片保持固定 */
 }
 
 .leftSection {
-    position: absolute; /* 使内容在父容器内进行绝对定位 */
-    bottom: 100px; /* 距离底部 20px */
-    left: 40px; /* 距离左侧 20px */
+    position: absolute; /* 保持内容在父容器内进行相对定位，避免绝对定位造成布局问题 */
+    margin-top: 600px; /* 使用 margin 而不是 bottom 来控制间距，避免布局错乱 */
+    left: 60px; /* 距离左侧 40px */
+}
+
+.hoverEffect {
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.hoverEffect:hover {
+  color: blue;
 }
 
 .learnMoreButton {
     padding: 10px 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid #000; /* 默认状态下为黑色边框 */
     border-radius: 25px;
     background: transparent;
     color: #ffffff;
     font-weight: bold;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-}
-
-.learnMoreButton:hover {
-    background: #ffffff;
-    color: #333;
-}
+    margin-bottom: 20px; /* 调整按钮与下方内容之间的间距 */
+  }
+  
+  .learnMoreButton:hover {
+    color: #3b67e2; /* 鼠标悬停时文字变为绿色 */
+    border-color: #3b67e2; /* 鼠标悬停时边框改为绿色 */
+  }
+  
